@@ -289,9 +289,10 @@ We need the following tools/environments installed before we could launch a Reac
 
 Considering you have Node.js installed, we may use the following steps to start/create our first React project:
 
-```
---you will use your local terminal/powershell
+```bash
+
 fhamid@NSCHNS172 SpringProjects % npm create vite@latest
+
 Need to install the following packages:
 create-vite@8.3.0
 Ok to proceed? (y) y
