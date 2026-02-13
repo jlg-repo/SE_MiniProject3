@@ -262,7 +262,6 @@ document.body.appendChild(newDiv);
 We need the following tools/environments installed before we could launch a React project:
 
 - **Node.js & npm/yarn**:
-  - How to manage packages and run a local development server.
   - Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
   - Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
   - **npm (Node Package Manager)** is the standard package manager for the JavaScript runtime environment Node.js and the largest software registry in the world.
