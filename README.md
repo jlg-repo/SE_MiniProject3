@@ -291,8 +291,13 @@ Considering you have Node.js installed, we may use the following steps to start/
 
 ```bash
 
-fhamid@NSCHNS172 SpringProjects % npm create vite@latest
+ npm create vite@latest
 
+```
+
+Once you press enter, you may see something like the following:
+
+```
 Need to install the following packages:
 create-vite@8.3.0
 Ok to proceed? (y) y
@@ -301,5 +306,28 @@ Ok to proceed? (y) y
 > npx
 > "create-vite"
 
+│
+◇  Project name:
+│  mini-project-03
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Use Vite 8 beta (Experimental)?:
+│  No
+│
+◇  Install with npm and start now?
+│  Yes
+│
+◇  Scaffolding project in /Users/fhamid/Desktop/SpringProjects/mini-project-03...
+│
+◇  Installing dependencies with npm...
 
+added 206 packages, and audited 207 packages in 11s
+
+33 packages are looking for funding
+  run `npm fund` for details
 ```
