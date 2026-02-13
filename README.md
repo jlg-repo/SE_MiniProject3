@@ -364,7 +364,7 @@ added 206 packages, and audited 207 packages in 11s
 #### Configuration Files (Root Directory):
 
 - **index.html**: The main entry point for the browser.
-  - It includes a $<div id="root"></div>$ where React renders your UI and a $<script>$ tag pointing to main.jsx.
+  - It includes a `<div id="root"></div>` where React renders your UI and a `<script>` tag pointing to main.jsx.
 
 - **package.json**: Lists your project's metadata, dependencies, and "scripts" (like npm run dev to start the project).
 
