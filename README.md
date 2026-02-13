@@ -379,3 +379,29 @@ npm run dev
 ```
 
 - A new page should open at your browser.
+
+### Step 05: Common React Terms, Concepts, Ideas
+
+- **Fragment:**
+  - A React component must return a single root element. A React.Fragment (or its shorthand `<></>`) is used to group multiple elements so they can be returned as a single unit without adding an extra node to the DOM.
+
+  - The core rules regarding a component's return value are:
+    - **Grouping with Fragments**: React.Fragment acts as that single return value while allowing you to group multiple, adjacent JSX elements inside it. The fragment itself is a "virtual" container and does not appear in the final rendered HTML structure, which is its main advantage over using a `<div>` wrapper.
+
+    - **Single Return Value**: Due to how JSX is transpiled into JavaScript and how React's reconciliation algorithm works, a component's render method or function body must resolve to a single value.
+
+- **Rendering**:
+
+- In React, "rendering" is a specific process where React calls your components to determine what the user interface (UI) should look like based on current data.
+
+- The official React documentation breaks the process into three distinct steps:
+  - **Triggering a Render**: This is the "order" from the user or the app. It happens during the initial render (when the app starts) or when a component's state is updated.
+
+  - **Rendering the Component**: React calls your function (or the render() method in class components) to figure out what to display. This stage is recursive; if a parent component renders, React will automatically re-render all its children unless they are optimized.
+
+  - **Committing to the DOM**: After calculating the differences (diffing) between the new and old versions of the UI, React applies only the minimal necessary changes to the real browser DOM.
+
+## Resources:
+
+- https://react.dev/learn
+- https://vite.dev/
