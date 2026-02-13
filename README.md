@@ -34,7 +34,7 @@
 
 #### Reviewing/Introducing important Ideas of ES6:
 
-1. **Arrow Functions:**
+**A) Arrow Functions:**
 
 You may try the following code by first writing them in a .js file (say, `week03.js` and run it by calling `node week03.js` from your command prompt)
 
@@ -46,3 +46,53 @@ const sum = (a, b) => a + b;
 
 console.log(sum(3, 2));
 ```
+
+**B)Arrays and Objects:**
+
+```javascript
+// you may have seen this in the last lab
+// declare arrays
+let good = [10, 20, -50, 300, -18];
+
+//single variable
+let allGood = 0;
+
+//iterate through the list/array using a for loop
+for (i = 0; i < good.length; i++) {
+  allGood += good[i];
+}
+
+console.log("All Good: ", allGood);
+
+//declare objects
+let p = { name: "Germany", foul: 10, cardY: 1, cardR: 1 };
+let q = { name: "France", foul: 10, cardY: 2, cardR: 1 };
+
+// an array of objects
+let arrObjects = [
+  { name: "x", foul: 1 },
+  { name: "y", foul: 1 },
+  { name: "x", foul: 1 },
+  { name: "xxx", foul: 12, img_src: "xx" },
+];
+
+arrObjects.push({ name: "d" });
+```
+
+**C) Maps, Filter, Reduce: The primary way to render lists of data in React:**
+
+- **Maps:**
+  In JavaScript, the map() method is an iterative function used to transform an array into a new one by applying a specific operation to every element
+
+```javascript
+const doubleASeries = (series) => {
+  return series.map((s, index) => s * 2);
+};
+console.log(doubleASeries([1, 2, 3, 4]));
+// sample output: [ 2, 4, 6, 8 ]
+```
+
+- Why Use map() instead of a for loop?
+  - **Readability:** It clearly signals your intent is to "transform" data, making the code easier for others to follow.
+  - **Functional Programming:** It allows for chaining. Since map() returns a new array, you can immediately call .filter() or .sort() on the result.
+  - **React Integration:** In React, map() is the standard way to convert an array of data into a list of UI components.
