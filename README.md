@@ -179,35 +179,35 @@ console.log(getTotal([1, 2, 3, 4, 5]));
         //output: [ 'apples', 'oranges', 'pears', 'strawberries', 'pineapples', 'dates' ]
         ```
 
-        - **Copying an Array or Object:**
+    - **Copying an Array or Object:**
 
-        It can create a shallow copy of an existing array or object, which helps avoid issues with copying by reference.
+      It can create a shallow copy of an existing array or object, which helps avoid issues with copying by reference.
 
-        ```javascript
-        const originalArray = [1, 2, 3];
-        const copiedArray = [...originalArray];
+      ```javascript
+      const originalArray = [1, 2, 3];
+      const copiedArray = [...originalArray];
 
-        copiedArray.push(4); // Modifies the copy, not the original
+      copiedArray.push(4); // Modifies the copy, not the original
 
-        console.log(originalArray); // Output: [1, 2, 3]
-        console.log(copiedArray); // Output: [1, 2, 3, 4]
-        ```
+      console.log(originalArray); // Output: [1, 2, 3]
+      console.log(copiedArray); // Output: [1, 2, 3, 4]
+      ```
 
-        - **Passing Array Elements as Function Arguments:**
+    - **Passing Array Elements as Function Arguments:**
 
-        The spread operator can expand an array's elements to be passed as individual arguments to a function.
+      The spread operator can expand an array's elements to be passed as individual arguments to a function.
 
-        ```javascript
-        const sum3 = (x, y, z) => {
-          return x + y + z;
-        };
+    ```javascript
+    const sum3 = (x, y, z) => {
+      return x + y + z;
+    };
 
-        const numbers = [1, 2, 3];
+    const numbers = [1, 2, 3];
 
-        // Expands the numbers array into individual arguments: sum3(1, 2, 3)
-        console.log(sum3(...numbers));
-        // Output: 6
-        ```
+    // Expands the numbers array into individual arguments: sum3(1, 2, 3)
+    console.log(sum3(...numbers));
+    // Output: 6
+    ```
 
     -**Rest Operators:**
 
