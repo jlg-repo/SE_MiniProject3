@@ -167,14 +167,50 @@ console.log(getTotal([1, 2, 3, 4, 5]));
 - **Spread:**
   - **Combining Arrays:**
 
-    The spread operator provides a concise way to merge two or more arrays without using methods like `concat()`.
+        The spread operator provides a concise way to merge two or more arrays without using methods like `concat()`.
 
-    ```javascript
-    let fruitBasket1 = ["apples", "oranges", "pears"];
-    let fruitBasket2 = ["strawberries", "pineapples", "dates"];
+        ```javascript
+        let fruitBasket1 = ["apples", "oranges", "pears"];
+        let fruitBasket2 = ["strawberries", "pineapples", "dates"];
 
-    let largerBasket = [...fruitBasket1, ...fruitBasket2];
-    console.log(largerBasket);
+        let largerBasket = [...fruitBasket1, ...fruitBasket2];
+        console.log(largerBasket);
 
-    //output: [ 'apples', 'oranges', 'pears', 'strawberries', 'pineapples', 'dates' ]
-    ```
+        //output: [ 'apples', 'oranges', 'pears', 'strawberries', 'pineapples', 'dates' ]
+        ```
+
+        - **Copying an Array or Object:**
+
+        It can create a shallow copy of an existing array or object, which helps avoid issues with copying by reference.
+
+        ```javascript
+        const originalArray = [1, 2, 3];
+        const copiedArray = [...originalArray];
+
+        copiedArray.push(4); // Modifies the copy, not the original
+
+        console.log(originalArray); // Output: [1, 2, 3]
+        console.log(copiedArray); // Output: [1, 2, 3, 4]
+        ```
+
+        - **Passing Array Elements as Function Arguments:**
+
+        The spread operator can expand an array's elements to be passed as individual arguments to a function.
+
+        ```javascript
+        const sum3 = (x, y, z) => {
+          return x + y + z;
+        };
+
+        const numbers = [1, 2, 3];
+
+        // Expands the numbers array into individual arguments: sum3(1, 2, 3)
+        console.log(sum3(...numbers));
+        // Output: 6
+        ```
+
+    -**Rest Operators:**
+
+    Please find details here:
+
+        - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
