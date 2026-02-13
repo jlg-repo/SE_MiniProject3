@@ -120,7 +120,10 @@ console.log(getMeTheOdds([1, 2, 3, 4, 5, 7, 20, 12, 55]));
 // sample output: [1, 3, 5, 7, 55];
 ```
 
-- **Key Characteristics:** -**Returns a New Array:** It produces a new array containing only the items that passed the test. -**Variable Length:** Unlike map(), the new array is usually shorter than the original. -**Non-Mutating:** The original array remains completely untouched.
+- **Key Characteristics:**
+  - **Returns a New Array:** It produces a new array containing only the items that passed the test.
+  - **Variable Length:** Unlike map(), the new array is usually shorter than the original.
+  - **Non-Mutating:** The original array remains completely untouched.
 
 - **Why use filter()?**
   - **Declarative Logic:** Instead of writing a complex for loop with an if statement and a manual .push(), you simply describe what you want to keep.
@@ -128,7 +131,9 @@ console.log(getMeTheOdds([1, 2, 3, 4, 5, 7, 20, 12, 55]));
 
 - **Common Use Cases:**
   - **Search Bars:** Filtering a list of products based on what the user typed.
+
   - **Deleting Items:** Removing a specific ID from an array (e.g., `list.filter(item => item.id !== deletedId))`.
+
   - **Data Cleanup:** Stripping out null or undefined values from a dataset.
 
 - **Reduce:**
@@ -160,7 +165,7 @@ console.log(getTotal([1, 2, 3, 4, 5]));
 - These operators are frequently used to pass props or update state immutably.
 
 - **Spread:**
-  - Combining Arrays:
+  - **Combining Arrays:**
 
     The spread operator provides a concise way to merge two or more arrays without using methods like `concat()`.
 
