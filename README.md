@@ -15,16 +15,34 @@
 
 ## Step 01: More on JavaScript
 
-- **Javascript (ES6)**
-  - ES6 (ECMAScript 2015) was introduced to modernize JavaScript by addressing its limitations and adding features found in other mature programming languages, thereby making it a more powerful, efficient, and maintainable language for building complex, large-scale applications.
+#### Javascript (ES6)
 
-  - **Key reasons for its introduction include:**
-    - **Addressing Language Gaps:** Before ES6, JavaScript lacked crucial features like proper variable scoping, a native module system, and built-in support for object-oriented programming (OOP) classes.
+- ES6 (ECMAScript 2015) was introduced to modernize JavaScript by addressing its limitations and adding features found in other mature programming languages, thereby making it a more powerful, efficient, and maintainable language for building complex, large-scale applications.
 
-    - **Enhancing Code Readability and Maintainability:** ES6 introduced a more concise and expressive syntax, such as `arrow functions`, `template literals`, and `de-structuring`, which significantly improved the readability and reduced the verbosity of the code.
-    - **Improving Asynchronous Programming:** The `Promise API` was introduced to handle asynchronous operations more gracefully
-    - **Standardizing Modularity:** The introduction of native `import` and `export` statements solved the problem of organizing code into separate, reusable files, which was a crucial step for developing large, **modular** applications.
+- **Key reasons for its introduction include:**
+  - **Addressing Language Gaps:** Before ES6, JavaScript lacked crucial features like proper variable scoping, a native module system, and built-in support for object-oriented programming (OOP) classes.
 
-    - **Better Variable Management:** The `let` and `const` keywords were added to provide block-scoped variable declarations, resolving the issues and unpredictable behavior associated with the function-scoped `var` keyword.
+  - **Enhancing Code Readability and Maintainability:** ES6 introduced a more concise and expressive syntax, such as `arrow functions`, `template literals`, and `de-structuring`, which significantly improved the readability and reduced the verbosity of the code.
+  - **Improving Asynchronous Programming:** The `Promise API` was introduced to handle asynchronous operations more gracefully
+  - **Standardizing Modularity:** The introduction of native `import` and `export` statements solved the problem of organizing code into separate, reusable files, which was a crucial step for developing large, **modular** applications.
 
-    - **Enabling Modern Frameworks:** Modern web development frameworks like `React`, `Angular`, and `Vue` rely heavily on the features introduced in ES6, making knowledge of this version essential for contemporary developers.
+  - **Better Variable Management:** The `let` and `const` keywords were added to provide block-scoped variable declarations, resolving the issues and unpredictable behavior associated with the function-scoped `var` keyword.
+
+  - **Enabling Modern Frameworks:** Modern web development frameworks like `React`, `Angular`, and `Vue` rely heavily on the features introduced in ES6, making knowledge of this version essential for contemporary developers.
+
+  - **more:** https://www.w3schools.com/js/js_es6.asp
+
+#### Reviewing/Introducing important Ideas of ES6:
+
+1. **Arrow Functions:**
+
+You may try the following code by first writing them in a .js file (say, `week03.js` and run it by calling `node week03.js` from your command prompt)
+
+- Note: VS Code has command prompt too. You can test it there.
+
+```javascript
+// => fat arrow
+const sum = (a, b) => a + b;
+
+console.log(sum(3, 2));
+```
