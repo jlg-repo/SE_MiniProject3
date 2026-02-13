@@ -223,7 +223,7 @@ console.log(getTotal([1, 2, 3, 4, 5]));
 - Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders). However, a tagged template literal may not result in a string; it can be used with a custom tag function to perform whatever operations you want on the different parts of the template literal.
 
 ```javascript
-// assume you wrote the following code block in a file called templates.js and connected that to a basic html file called index.html
+// assume you wrote the following code block in a file called templates.js and connected  that to a basic html file called index.html
 
 // 1. Create the data
 
@@ -253,4 +253,18 @@ newDiv.innerHTML = markup;
 
 // 5. Append the new element to the DOM (e.g., to the body)
 document.body.appendChild(newDiv);
+
+//index.html should have a div displaying a person's name, city and bio.
 ```
+
+### Tools and Environment
+
+We need the following tools/environments installed before we could launch a React project:
+
+- **Node.js & $npm/yarn**:
+  - How to manage packages and run a local development server.
+- **Vite** or Create React App:
+  - Provide a standard way to bootstrap projects without manual Webpack configuration.
+- **Basic CLI (command line interface) Skills:**
+  - Navigating folders and running commands in the terminal (e.g., cd, mkdir, etc.).
+  
