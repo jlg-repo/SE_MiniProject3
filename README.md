@@ -216,7 +216,7 @@ console.log(getTotal([1, 2, 3, 4, 5]));
 
 **E) Template Literals:**
 
-- Template literals are literals delimited with backtick $(`)$ characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
+- Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
 
 - In JavaScript, template literals (often called template strings) provide a modern, flexible way to work with strings using backticks (`) instead of standard quotes.
 
@@ -270,14 +270,14 @@ We need the following tools/environments installed before we could launch a Reac
     -Dependencies are pre-built pieces of code, such as libraries and packages, that your Node.js application needs to work.
 
 - useful link:
-  a) https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager
+  - a) https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager
 
-  b) https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+  - b) https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
 
 - **Vite** or Create React App:
   - Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
-  - Provides a standard way to bootstrap projects without manual Webpack configuration.
+  - It provides a standard way to bootstrap projects without manual Webpack configuration.
 
   - useful link: - https://vite.dev/guide/
 
@@ -429,24 +429,42 @@ Change the display to flex and make flex-direction = row to show the impacts
 11.	Show example of passing multiple props
 ```
 
-## Mini-Project [30 points]:
+## Mini-Project:
 
 - Create a simple Grocery List App using React, where a user can
   - add new grocery items to the list,
   - view the current items (as an ul/li),
   - remove some items from the list
   - modify some items
+
 - While doing so,
-  - Maintain Component-based design (at least one component to represent an item)
+  - Maintain Component-based design (at least one component to represent grocery item)
+  - It's okay of the items only contain text-based information (image is not a must)
   - Add proper styles to the components
   - Add buttons,labels, etc., so a user can add/update/delete items
 - (live link): Deploy the app using Netlify/other platform
 - (repo): Publish the code and readme (explaining the core ideas, components) in the GitHub repo
+
 - Submit the live link and the repo to the Canvas
-- Note that you will get a 0 if the live link / repo link is broken.
-- This is an individual assignment. It’s okay to take help from each other, but I expect that you will implement the app in your own way.
 - Keep the frontend (UI) simple and user-friendly.
 - Don’t forget to save your name in the README.
+- Add some introduction to your simple app in the README.
+
+- Note that **you will get a 0 if the live link / repo link is broken**.
+
+- This is an **individual assignment**. It’s okay to take help from each other, but I expect that you will implement the app in your own way.
+
+### Rubric [50 points]:
+
+- Component-based implementation [10 points],
+- Successful application of `map`, `filter`, `reduce` (at least one, based on necessity) [5 points]
+- Add/Insert New Item [5 points]
+- Delete/Remove Existing Item [5 points]
+- Update Existing Item [5 points]
+- Display the current list of items [5 points]
+- Presenatation (you must prepare a 2 minute speech, beginning of next class) -> [5 points]
+- GitHub Repository must have at least 5 meaningful commits (each commit should have proper comment) -> [5 points]
+- README: [readme section] -> [5 points]
 
 ## Resources:
 
