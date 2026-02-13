@@ -257,7 +257,33 @@ document.body.appendChild(newDiv);
 //index.html should have a div displaying a person's name, city and bio.
 ```
 
-### Step 02: Tools and Environment
+### Step 02a: React: What and Why?
+
+React is a popular open-source JavaScript library developed by Facebook for building fast, interactive user interfaces (UIs), primarily for single-page applications. It allows developers to create reusable UI components, manage application state efficiently, and update the view layer without reloading the page, using a virtual DOM for high performance.
+
+#### What is React?
+
+- Component-Based: UIs are broken down into small, isolated pieces of code called components, which can be reused throughout an application.
+
+- Declarative: Developers describe what the UI should look like for different states, and React automatically updates and renders the right components when data changes.
+
+- JavaScript-Centric: It uses JSX, a syntax extension that combines HTML and JavaScript, allowing logic and UI structure to exist together.
+
+- Virtual DOM: React uses a virtual representation of the real DOM to calculate the minimum number of changes needed, significantly improving performance.
+
+#### Why Use React?
+
+- Performance: The virtual DOM ensures efficient updates, making applications fast.
+
+- Reusability: Components can be reused, which saves development time and ensures consistency.
+
+- Scalability: Well-suited for large, complex applications that require frequently changing data.
+
+- Flexibility & Ecosystem: Can be used for web applications and mobile apps (via React Native).
+
+- Maintainability: Strong, modular code structure makes it easier to manage and update apps.
+
+### Step 02b: Tools and Environment
 
 We need the following tools/environments installed before we could launch a React project:
 
