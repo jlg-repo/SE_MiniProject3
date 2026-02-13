@@ -339,3 +339,43 @@ added 206 packages, and audited 207 packages in 11s
   - Now, you will find a folder named `mini-project-03` in the current directory.
   - go inside (CLI command: `cd mini-project-03`) and open it using VS Code (command: `code .`)
   - VS Code should open and you will find several files, folders, etc. organized.
+
+### Step 04: Getting to know the files and the structure:
+
+- **node_modules/**: Contains all the third-party libraries (dependencies) your project needs to run. This folder is large and should never be edited manually or pushed to version control.
+
+- **public/**: Stores static assets like your favicon or images that do not need any processing. Files here are served directly at the root path (e.g., /logo.png)
+
+- **src/**: The heart of your application where you will spend 99% of your time coding.
+
+#### Key Files in src/:
+
+- **main.jsx**: The true JavaScript entry point. It finds the root element in your HTML and "mounts" your entire React application into it.
+  - **Syntax Extension**: JSX is a syntax extension that allows developers to write HTML-like markup directly within their JavaScript code.
+  - **Purpose with React:** It is primarily used with the React library to describe what the user interface (UI) should look like in a visually intuitive way. Instead of separating markup and logic in different files, React components combine them, making code more readable and maintainable.
+  - **Transpilation:** Browsers cannot read JSX directly. Code written with JSX must be transpiled (converted) into regular, valid JavaScript code using a tool like Babel before it can run in a browser.
+
+- **App.jsx**: The "Root Component." This is typically the top-level container that holds all other components you build.
+
+- **assets/**: A sub-folder for images, fonts, and CSS that should be processed (optimized/minified) by Vite during the build process.
+
+- **index.css** & **App.css**: Default stylesheets. index.css is usually for global styles, while App.css is specific to the App component.
+
+#### Configuration Files (Root Directory):
+
+- **index.html**: The main entry point for the browser.
+  - It includes a $<div id="root"></div>$ where React renders your UI and a $<script>$ tag pointing to main.jsx.
+
+- **package.json**: Lists your project's metadata, dependencies, and "scripts" (like npm run dev to start the project).
+
+- **vite.config.js**: The configuration file where you can add plugins (like React support) or customize how Vite builds your project.
+
+- **.gitignore**: Tells Git which files (like node_modules) to ignore so they aren't uploaded to your repository.
+
+### Deploy your React Project on local server (on terminal):
+
+```bash
+npm run dev
+```
+
+- A new page should open at your browser.
