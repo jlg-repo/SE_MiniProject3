@@ -414,22 +414,24 @@ ToDo:
 -	Once that is done, try add style to the divs. [css class, style]
 -	Try to add a <p> component that displays the current value
 -	Create your first component
-1.	Create a component folder,
-2.	inside create a file CountingComponent.jsx [component names: capitalize each word]
-3.	type rsc on screen and it should give you the skeleton of a component
-4.	Add some code (copy the button, state, handler, etc.)
-5.	Create/Add a CountingComponent to the App component. [don’t forget to import it]
-6.	Check the impact.
-7.	Try to pass a parameter to add more interesting interactivity.
+  - Create a `component` folder in the root directory,
+    - inside of that folder, create a file CountingComponent.jsx [component names: capitalize each word]
+  - type `rsc` on screen and it should give you the skeleton of a component
+  - Add some code (copy the button, state, handler, etc.)
+- Create/Add a CountingComponent to the App component. [don’t forget to import it]
+- Check the impact.
+- Try to pass a parameter to add more interesting interactivity.
+
 [In React, the term "props" is fundamentally the name given to the single parameter (an object) that a component function receives. There is no difference in the underlying JavaScript mechanism; "props" is simply the React-specific naming convention for the data passed into a component.]
-8.	Add conditional rendering (by using conditional operator)
-9.	Use an array of data (const inputs = [true, false, true, true];) and create components based on the input values.
+
+- Add conditional rendering (by using conditional operator)
+- Use an array of data (const inputs = [true, false, true, true];) and create components based on the input values.
 Change the display to flex and make flex-direction = row to show the impacts
-10.	Introduce them to the idea of key and index
-11.	Show example of passing multiple props
+- Introduce them to the idea of key and index
+- Show example of passing multiple props
 ```
 
-## Mini-Project:
+## Mini-Project-03 (Problem Description):
 
 - Create a simple Grocery List App using React, where a user can
   - add new grocery items to the list,
@@ -464,7 +466,7 @@ Change the display to flex and make flex-direction = row to show the impacts
 - Display the current list of items [5 points]
 - Presenatation (you must prepare a 2 minute speech, beginning of next class) -> [5 points]
 - GitHub Repository must have at least 5 meaningful commits (each commit should have proper comment) -> [5 points]
-- README: [readme section] -> [5 points]
+- README file -> [5 points]
 
 ## Resources:
 
