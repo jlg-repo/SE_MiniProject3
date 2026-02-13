@@ -213,3 +213,44 @@ console.log(getTotal([1, 2, 3, 4, 5]));
 
   Please find details here:
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+
+**E) Template Literals:**
+
+- Template literals are literals delimited with backtick $(`)$ characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
+
+- In JavaScript, template literals (often called template strings) provide a modern, flexible way to work with strings using backticks (`) instead of standard quotes.
+
+- Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders). However, a tagged template literal may not result in a string; it can be used with a custom tag function to perform whatever operations you want on the different parts of the template literal.
+
+```javascript
+// assume you wrote the following code block in a file called templates.js and connected that to a basic html file called index.html
+
+// 1. Create the data
+
+const person = {
+  name: "John Doe",
+  city: "Example City",
+  bio: "A brief description of John Doe.",
+};
+
+// Create the HTML markup using a template literal (backticks ``)
+
+const markup = `
+    <div class="person" style="color: blueviolet">
+        <h2>${person.name}</h2>
+        <p class="location">${person.city}</p>
+        <p class="bio">${person.bio}</p>
+    </div>
+`; //
+
+// 3. Create a new container element
+
+const newDiv = document.createElement("div");
+
+// 4. Set the template string as the innerHTML of the new element
+
+newDiv.innerHTML = markup;
+
+// 5. Append the new element to the DOM (e.g., to the body)
+document.body.appendChild(newDiv);
+```
