@@ -164,34 +164,34 @@ console.log(getTotal([1, 2, 3, 4, 5]));
 
 - These operators are frequently used to pass props or update state immutably.
 
-- **Spread:**
+- **The Spread Operator:**
   - **Combining Arrays:**
 
-        The spread operator provides a concise way to merge two or more arrays without using methods like `concat()`.
+    The spread operator provides a concise way to merge two or more arrays without using methods like `concat()`.
 
-        ```javascript
-        let fruitBasket1 = ["apples", "oranges", "pears"];
-        let fruitBasket2 = ["strawberries", "pineapples", "dates"];
+    ```javascript
+    let fruitBasket1 = ["apples", "oranges", "pears"];
+    let fruitBasket2 = ["strawberries", "pineapples", "dates"];
 
-        let largerBasket = [...fruitBasket1, ...fruitBasket2];
-        console.log(largerBasket);
+    let largerBasket = [...fruitBasket1, ...fruitBasket2];
+    console.log(largerBasket);
 
-        //output: [ 'apples', 'oranges', 'pears', 'strawberries', 'pineapples', 'dates' ]
-        ```
+    //output: [ 'apples', 'oranges', 'pears', 'strawberries', 'pineapples', 'dates' ]
+    ```
 
     - **Copying an Array or Object:**
 
-      It can create a shallow copy of an existing array or object, which helps avoid issues with copying by reference.
+    It can create a shallow copy of an existing array or object, which helps avoid issues with copying by reference.
 
-      ```javascript
-      const originalArray = [1, 2, 3];
-      const copiedArray = [...originalArray];
+    ```javascript
+    const originalArray = [1, 2, 3];
+    const copiedArray = [...originalArray];
 
-      copiedArray.push(4); // Modifies the copy, not the original
+    copiedArray.push(4); // Modifies the copy, not the original
 
-      console.log(originalArray); // Output: [1, 2, 3]
-      console.log(copiedArray); // Output: [1, 2, 3, 4]
-      ```
+    console.log(originalArray); // Output: [1, 2, 3]
+    console.log(copiedArray); // Output: [1, 2, 3, 4]
+    ```
 
     - **Passing Array Elements as Function Arguments:**
 
@@ -209,8 +209,7 @@ console.log(getTotal([1, 2, 3, 4, 5]));
     // Output: 6
     ```
 
-    -**Rest Operators:**
+    -**The Rest Operator:**
 
     Please find details here:
-
-        - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
