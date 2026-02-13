@@ -20,9 +20,9 @@
 
   - **Key reasons for its introduction include:** - **Addressing Language Gaps:** Before ES6, JavaScript lacked crucial features like proper variable scoping, a native module system, and built-in support for object-oriented programming (OOP) classes.
 
-        - **Enhancing Code Readability and Maintainability:** ES6 introduced a more concise and expressive syntax, such as `arrow functions`, `template literals`, and `de-structuring`, which significantly improved the readability and reduced the verbosity of the code.
+        + **Enhancing Code Readability and Maintainability:** ES6 introduced a more concise and expressive syntax, such as `arrow functions`, `template literals`, and `de-structuring`, which significantly improved the readability and reduced the verbosity of the code.
 
-        - **Improving Asynchronous Programming:** The `Promise API` was introduced to handle asynchronous operations more gracefully
+        + **Improving Asynchronous Programming:** The `Promise API` was introduced to handle asynchronous operations more gracefully
 
         - **Standardizing Modularity:** The introduction of native `import` and `export` statements solved the problem of organizing code into separate, reusable files, which was a crucial step for developing large, **modular** applications.
 
