@@ -257,14 +257,30 @@ document.body.appendChild(newDiv);
 //index.html should have a div displaying a person's name, city and bio.
 ```
 
-### Tools and Environment
+### Step 02: Tools and Environment
 
 We need the following tools/environments installed before we could launch a React project:
 
 - **Node.js & $npm/yarn**:
   - How to manage packages and run a local development server.
+  - Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
+  - Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
+  - **npm (Node Package Manager)** is the standard package manager for the JavaScript runtime environment Node.js and the largest software registry in the world.
+  - **npm** consists of a command-line interface (CLI), an online registry of packages, and a website.
+  - npm installs, updates and manages downloads of dependencies of your project.
+    -Dependencies are pre-built pieces of code, such as libraries and packages, that your Node.js application needs to work.
+
+- useful link:
+  a) https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager
+
+  b) https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+
 - **Vite** or Create React App:
-  - Provide a standard way to bootstrap projects without manual Webpack configuration.
+  - Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
+
+  - Provides a standard way to bootstrap projects without manual Webpack configuration.
+
+  - useful link: - https://vite.dev/guide/
+
 - **Basic CLI (command line interface) Skills:**
-  - Navigating folders and running commands in the terminal (e.g., cd, mkdir, etc.).
-  
+  - Navigating folders and running commands in the terminal (command prompt, powershell, terminal (mac users)).
