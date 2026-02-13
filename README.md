@@ -401,7 +401,58 @@ npm run dev
 
   - **Committing to the DOM**: After calculating the differences (diffing) between the new and old versions of the UI, React applies only the minimal necessary changes to the real browser DOM.
 
+## ToDo (in-class):
+
+Do the following steps together with professor Hamid:
+
+```
+ToDo:
+
+-	Remove everything from the App.jsx (it will clean everything from the page)
+-	Return a div with a single message and a button component
+-	Add interactivity to the button (upcount)
+-	Try to do similar (add another div and a button, add interactivity)
+-	Once that is done, try add style to the divs. [css class, style]
+-	Try to add a <p> component that displays the current value
+-	Create your first component
+1.	Create a component folder,
+2.	inside create a file CountingComponent.jsx [component names: capitalize each word]
+3.	type rsc on screen and it should give you the skeleton of a component
+4.	Add some code (copy the button, state, handler, etc.)
+5.	Create/Add a CountingComponent to the App component. [don’t forget to import it]
+6.	Check the impact.
+7.	Try to pass a parameter to add more interesting interactivity.
+[In React, the term "props" is fundamentally the name given to the single parameter (an object) that a component function receives. There is no difference in the underlying JavaScript mechanism; "props" is simply the React-specific naming convention for the data passed into a component.]
+8.	Add conditional rendering (by using conditional operator)
+9.	Use an array of data (const inputs = [true, false, true, true];) and create components based on the input values.
+Change the display to flex and make flex-direction = row to show the impacts
+10.	Introduce them to the idea of key and index
+11.	Show example of passing multiple props
+```
+
+## Mini-Project [30 points]:
+
+- Create a simple Grocery List App using React, where a user can
+  - add new grocery items to the list,
+  - view the current items (as an ul/li),
+  - remove some items from the list
+  - modify some items
+- While doing so,
+  - Maintain Component-based design (at least one component to represent an item)
+  - Add proper styles to the components
+  - Add buttons,labels, etc., so a user can add/update/delete items
+- (live link): Deploy the app using Netlify/other platform
+- (repo): Publish the code and readme (explaining the core ideas, components) in the GitHub repo
+- Submit the live link and the repo to the Canvas
+- Note that you will get a 0 if the live link / repo link is broken.
+- This is an individual assignment. It’s okay to take help from each other, but I expect that you will implement the app in your own way.
+- Keep the frontend (UI) simple and user-friendly.
+- Don’t forget to save your name in the README.
+
 ## Resources:
 
 - https://react.dev/learn
 - https://vite.dev/
+- https://medium.com/@koriigami/a-simple-guide-to-the-modern-vite-project-structure-9fbe8d137abf
+- https://github.com/MoonHighway/learning-react/blob/second-edition/README.md
+- https://react.dev/learn/render-and-commit
