@@ -287,7 +287,9 @@ We need the following tools/environments installed before we could launch a Reac
 
 ### Step 03: Creating the first React Project:
 
-Considering you have Node.js installed, we may use the following steps to start/create our first React project:
+Considering you have Node.js installed, we may provide the following command on your CLI to start/create our first React project:
+
+- note: vite guide has the same information
 
 ```bash
 
@@ -331,3 +333,9 @@ added 206 packages, and audited 207 packages in 11s
 33 packages are looking for funding
   run `npm fund` for details
 ```
+
+- note:
+  - I provided the project name, `mini-project-03`, selected the framework `React` and `JavaScript` variant.
+  - Now, you will find a folder named `mini-project-03` in the current directory.
+  - go inside (CLI command: `cd mini-project-03`) and open it using VS Code (command: `code .`)
+  - VS Code should open and you will find several files, folders, etc. organized.
