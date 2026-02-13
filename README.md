@@ -261,7 +261,7 @@ document.body.appendChild(newDiv);
 
 We need the following tools/environments installed before we could launch a React project:
 
-- **Node.js & $npm/yarn**:
+- **Node.js & npm/yarn**:
   - How to manage packages and run a local development server.
   - Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
   - Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
@@ -284,3 +284,21 @@ We need the following tools/environments installed before we could launch a Reac
 
 - **Basic CLI (command line interface) Skills:**
   - Navigating folders and running commands in the terminal (command prompt, powershell, terminal (mac users)).
+
+### Step 03: Creating the first React Project:
+
+Considering you have Node.js installed, we may use the following steps to start/create our first React project:
+
+```
+--you will use your local terminal/powershell
+fhamid@NSCHNS172 SpringProjects % npm create vite@latest
+Need to install the following packages:
+create-vite@8.3.0
+Ok to proceed? (y) y
+
+
+> npx
+> "create-vite"
+
+
+```
