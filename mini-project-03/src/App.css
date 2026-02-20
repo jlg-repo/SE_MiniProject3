@@ -1,4 +1,57 @@
-#root {
-  .error { color:red; }
-  
+/* Global */
+body {
+  background-color: #8faa8b;
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* Main card */
+.app {
+  background-color: #f5ead8;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* Title */
+h1 {
+  color: #c17f5a;
+  margin-top: 0;
+}
+
+/* Inputs */
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #c17f5a;
+  color: white;
+  margin-left: 4px;
+}
+
+/* List */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  padding: 6px 0;
+  border-bottom: 1px solid #e0d5c5;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 0.9em;
 }
