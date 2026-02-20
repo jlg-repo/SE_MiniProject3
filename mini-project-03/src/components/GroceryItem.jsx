@@ -1,10 +1,41 @@
 import { useState } from "react";
 
-const GroceryItem = ({ id, name, quantity, deleteItem }) => {
+const GroceryItem = ({ id, name, quantity, deleteItem, editItem }) => {
+  const [isEditing, setIsEditing] = useState(false);
+  const [editName, setEditName] = useState(name);
+  const [editQuantity, setEditQuantity] = useState(quantity);
+
+  const handleSave = () => {
+    if (editName.trim() !== "" && editQuantity > 0) {
+      editItem(id, editName, editQuantity);
+      setIsEditing(false);
+    }
+  };
+
+  const handleCancel = () => {
+    setEditName(name);
+    setEditQuantity(quantity);
+    setIsEditing(false);
+  };
+
+
+    if (isEditing) {
+        return (
+          <li>
+            <input value= {editName} onChange={(e) => setEditName(e.target.value)} />
+            <input type="number" value={editQuantity} onChange={(e) => setEditQuantity(parseInt(e.target.value) || 1)} />
+            <button onClick={handleSave}>Save</button>
+            <button onClick={handleCancel}>Cancel</button>
+            </li>
+        );
+
+  }
+
+
   return (
-    <li >{name} (Quantity: {quantity}) <button onClick={() => deleteItem(id)}>Delete</button></li>
-    // button to delete item, on click, call deleteItem function with id as argument
-    // this only works if deleteItem is defined and called as a prop from App.jsx, which is the parent component that holds the state and logic for the grocery list
+    <li >{name} (Quantity: {quantity})
+    <button onClick={() => setIsEditing(true)}>Edit</button>
+     <button onClick={() => deleteItem(id)}>Delete</button></li>
   );
 };
 

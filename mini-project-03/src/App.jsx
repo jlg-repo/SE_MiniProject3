@@ -31,6 +31,11 @@ const App = () => {
     }
   };
 
+  const editItem = (id, newName, newQuantity) => {
+    setGroceryList(groceryList.map(item => item.id === id ? {...item, name: newName, quantity: newQuantity} : item));
+    // map through grocery list, if item id matches the id of the item to edit, return a new object with the updated name and quantity, otherwise return the original item
+  }
+
   const deleteItem = (id) => {
     setGroceryList(groceryList.filter(item => item.id !== id));
     // item => means for each item in the list, evaluate this expression: item.id !== id, if true, keep the item in the list, if false, filter it out.
@@ -67,7 +72,7 @@ const App = () => {
       <button onClick={addItem}>Add</button>
       <ul>
         {groceryList.map((item) => (
-          <GroceryItem key={item.id} id={item.id} name={item.name} quantity={item.quantity || 1 } deleteItem={deleteItem}/>
+          <GroceryItem key={item.id} id={item.id} name={item.name} quantity={item.quantity || 1 } deleteItem={deleteItem} editItem={editItem}/>
         ))}
       </ul>
     </div>
