@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import GroceryItem from "./components/GroceryItem";
 
 
 const App = () => {
@@ -24,12 +25,13 @@ const App = () => {
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
+        onKeyDown={(e)=> {if (e.key === "Enter") addItem()}} // allows user to press enter to add item
         placeholder="Enter an item"
       />
       <button onClick={addItem}>Add</button>
       <ul>
         {groceryList.map((item) => (
-          <li key={item.id}>{item.name}</li>
+          <GroceryItem key={item.id} id={item.id} name={item.name}/>
         ))}
       </ul>
     </div>
