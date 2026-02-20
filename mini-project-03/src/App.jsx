@@ -1,25 +1,43 @@
 import "./App.css";
-import CountingComponent from "./components/CountingComponent";
+import { useState } from "react";
+
 
 const App = () => {
-  const inputs = [
-    [true, 10],
-    [false, 5],
-    [true, 12],
-    [true, 9],
-  ];
+  // contains grocery list state
+  const [groceryList, setGroceryList] = useState([]);
+
+  // contains input field state
+  const [inputValue, setInputValue] = useState(""); // this ordering almost seems inverted but it is correct. the grocery list state is the main state of the app, while the input value is just a temporary state for the input field.
+
+  // function to handle adding items to the grocery list
+  const addItem = () => {
+    if (inputValue.trim() !== "") {
+      setGroceryList([...groceryList, {id: Date.now(), name: inputValue}]); // dictionary with id and name, id is generated using Date.now() to ensure uniqueness
+      setInputValue("");
+    }
+  };
 
   return (
-    <>
-      {inputs.map(([a, b], index) => (
-        <CountingComponent
-          key={index}
-          upOrDown={a}
-          valueBy={b}
-        ></CountingComponent>
-      ))}
-    </>
+    <div className="app">
+      <h1>Grocery List</h1>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        placeholder="Enter an item"
+      />
+      <button onClick={addItem}>Add</button>
+      <ul>
+        {groceryList.map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
+    </div>
   );
+
+
+
+
 };
 
 export default App;
